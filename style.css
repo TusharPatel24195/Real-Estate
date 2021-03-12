@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root{
+  --primary-color:#5a3e28;
+  --secondary-color: #d7af25;
+} 
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+}
+
+#header {
+  background: url("./images/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  opacity: 0.7;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.logo {
+  margin: 0 1rem;
+  color: #fff;
+}
+.nav-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+.nav-list a {
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.nav-list a:hover {
+  color: var(--secondary-color)
+  cursor: pointer;
+  border-bottom: var(--secondary-color) solid 2px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header-content h1 {
+  font-size: 30px;
+  color: rgb(233, 162, 30);
+  background: #fff;
+  padding: 20px 30px;
+  opacity: 0.7;
+  border-radius: 20%;
+  position: relative;
+}
+
+.header-content .txt-type {
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-light {
+  margin-top: 50px;
+  background: #333;
+  padding: 1rem 2rem;
+  border: var(--secondary-color) solid 2px;
+}
+
+.header-content a {
+  color: var(--secondary-color);
+  font-weight: 900;
+}
+
+.btn-light:hover {
+  padding: 1rem;
+  transition: all 1s ease-in;
+}
+
+.header-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header-content * {
+  z-index: 8;
+}
+
+#about {
+  margin: 20px 25px;
+  height: 300px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  background: var(--secondary-color);
+  padding: 1rem;
+}
+
+.flex-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-items > div > h3,
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row .column-1, 
+.row .column-2 {
+  height: 100%;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh
+}
+.column-1{
+  background: url('./images/ronnie-george-Z2OkLCeLuCY-unsplash.jpg') no-repeat center center/cover;
+}
+
+.column-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  background: #d7af25;
+}
+
+.column-2>h4{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  background: #313131;
+  padding: 1rem;
+  color: #fff;
+  
+
+}
+
+.column-2>h2{
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+#main-footer{
+  width: 100%;
+  height: 120px;
+  background: #333;
+}
+
+.footer-content{
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-content >p {
+  
+  padding-top: 1rem;
+}
+
+.social{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social i{
+  margin: 1rem
+}
+
+.social i:hover{
+  cursor: pointer;
+  color: var(--secondary-color);
+  
+}
